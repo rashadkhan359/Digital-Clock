@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7.ttf');
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'digital-7', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+
+.trapezoid {
+	border-bottom: 40px solid;
+    border-bottom-color: linear-gradient(rgba(255,255,255,0.001), rgba(255,255,255,0.4));
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	height: 0;
+    position: absolute;
+    top:115px;
+    left:355px;
+	width: 400px;
+}
+.clockOuter{
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    top:150px;
+    position: relative;
+    background: #000;
+    border-radius: 30px;
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.001), rgba(255,255,255,0.4));
+}
+
+.clockOuter::before{
+    content: '';
+    position:absolute;
+    inset:2px;
+    background: rgba(26, 25, 25, 0.78);
+    border-radius: 28px;
+    
+}
+
+.clock{
+    position: absolute;
+    inset: 2px;
+    background-size: cover;
+    border-radius: 27px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    font-size: 100px;
+    padding: 10px;
+    top:2px;
+    height: 192px;
+    width: 592px;
+    position: absolute;
+    background-color: rgba(17, 17, 20, 0.78);
+    box-shadow: 3px 3px 3px rgba(17, 17, 20, 0.71);
+    border-radius: 27px;
+    display: flex;
+}
+
+table td {
+    border: 0px solid;
+    padding: 20px;
+    background-color:rgb(63, 2, 2);
+    box-shadow: inset 3px 3px 1px rgba(17, 15, 15, 0.612);
+}
+
+table td p{
+    position: relative;
+    color:rgb(231, 18, 18);
+    margin-top: 20px;
+    z-index: 100;
+}
+.numbers{
+    width: 180px;
+    min-width: 30px;
+    height: 100px;
+}
+.hours, .mins, .secs{
+    text-shadow: 0 0 10px rgb(231, 18, 18);
+}
+
+.numbers td{
+    display: inline-block;
+    position: relative;
+}
+.numbers .placeholder{
+    position: absolute;
+    top:32px;
+    color:rgba(122, 120, 120, 0.189);
+    z-index: 50;
+}
+.numbers, .colon{
+    border-width: 0px;
+    border-style: solid;
+}
+.type {
+    position: absolute;
+    top:175px;
+    color: rgb(116, 104, 105, 0.55);
+    text-shadow: 1px 0px 3px ;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 30px; 
+}
+
+.left-leg, .right-leg{
+    width: 30px; 
+    height: 10px;
+    background-color: rgb(12, 11, 11);
+    position: absolute;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    z-index: -1;
+    -webkit-box-reflect: below 1px linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9));
+}
+
+.left-leg{
+    top:350px;
+    right: 400px;
+}
+.right-leg{
+    top:350px;
+    left: 400px;
+}
