@@ -16,7 +16,7 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: radial-gradient(circle at 10% 20%, rgb(40, 22, 48) 10%, rgb(97, 66, 98) 90.2%);
 }
 
 .trapezoid {
@@ -27,7 +27,7 @@ body{
 	height: 0;
     position: absolute;
     top:115px;
-    left:355px;
+    left:425px;
 	width: 400px;
 }
 .clockOuter{
@@ -134,9 +134,9 @@ table td p{
 
 .left-leg{
     top:350px;
-    right: 400px;
+    right: 445px;
 }
 .right-leg{
     top:350px;
-    left: 400px;
+    left: 445px;
 }
